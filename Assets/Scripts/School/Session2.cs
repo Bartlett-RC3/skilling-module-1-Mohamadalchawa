@@ -15,7 +15,7 @@ public class Session2 : MonoBehaviour {
     List<int> evenNumbers = new List<int>();
     int[] evenNumbersSmart = new int[10];
 
-
+    List<Human> rc3Tutors = new List<Human>();
 	// Use this for initialization
 	void Start () {
 
@@ -116,13 +116,23 @@ public class Session2 : MonoBehaviour {
                 Debug.Log("Numbers divisible by 5:" + myOneHundredNumbers[i]);
             }
         }
+        Human Octavian = new Human(31, 1.7f, true, "Octavian", "Gheorghiu");
+        Human Tyson = new Human(34, 1.8f, true, "Tyson", "Hosmer");
+        Human Dave = new Human(33, 1.8f, true, "Dave", "Reeves");
 
+        rc3Tutors.Add(Octavian);
+        rc3Tutors.Add(Tyson);
+        rc3Tutors.Add(Dave);
 
     }
 
     // Update is called once per frame
     void Update () {
+        for(int i =0; i < rc3Tutors.Count; i++)
+        {
+            Debug.Log(rc3Tutors[i].GetFirstName());
+        }
 
-        
+        Cyborg OctavianModified = new Cyborg(31,1.75f,true,"Octavian","Gheorghiu",0.1f);
     }
 }
