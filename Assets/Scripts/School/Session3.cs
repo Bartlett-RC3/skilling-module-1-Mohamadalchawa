@@ -29,7 +29,7 @@ public class Session3 : MonoBehaviour {
         */
 
        //Time is miliseconds, useful because precise
-        Debug.Log("Actual time is:"+ Time.deltaTime.ToString());
+	    Debug.Log("Actual time is:" + Time.deltaTime.ToString());
 
         //Move cube left and right by manually setting tthe transform component
         /*
