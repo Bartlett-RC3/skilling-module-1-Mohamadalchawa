@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class Session2 : MonoBehaviour {
@@ -8,12 +9,12 @@ public class Session2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
         condition();
-		
 	}
 
-    void condition()
+   
+
+   public void condition()
     {
         int value = 50;
         if (value == 50)
