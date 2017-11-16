@@ -10,6 +10,10 @@ public class Session2 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         condition();
+
+        Session2Class skilling = new Session2Class();
+
+        Debug.Log("My coding skills are at " + skilling.codingSkillPercentage() + "%");
 	}
 
    
